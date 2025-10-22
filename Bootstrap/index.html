@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JavaScript Bundle (incluye Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- Ejemplo no práctico ya que le estoy diciendo que me ponga todos los
+      márgenes a la vez. Solo tendría que poner uno por ejemplo: m-5. ms= margin
+      start me= margin end -->
+
+    <!-- Margin
+      <div class="m-0 m-1 m-2 m-3 m-4 m-5 m-auto">Márgenes de 0 a auto</div>
+      <div class="mt-3 mb-3 ms-3 me-3 mx-auto">Márgenes direccionales</div>
+
+      Padding
+      <div class="p-1 p-2 p-3 p-4 p-5">Escala de padding</div>
+      <div class="pt-3 pb-3 ps-3 pe-3">Padding direccional</div>
+      <br /> -->
+
+    <div class="ms-3">
+      <!-- Margin -->
+      <div class="m-5">Márgenes de 0 a auto</div>
+      <div class="mt-3">Márgenes direccionales</div>
+
+      <!-- Padding -->
+      <div class="p-1">Escala de padding</div>
+      <div class="ps-3 pe-3">Padding direccional</div>
+      <br />
+
+      <!-- Alineación de texto -->
+      <div class="text-start">Alineación de texto</div>
+      <div class="text-secondary">Utilidades de color</div>
+      <div class="fw-bold">Peso y estilo de fuente</div>
+      <div class="text-uppercase text-capitalize"></div>
+
+      <!-- Utilidades de fondo -->
+      <div class="bg-primary bg-secondary bg-light bg-dark">
+        Colores de fondo
+      </div>
+      <div class="bg-gradient">Fondos con gradiente</div>
+      <div class="border border-primary border-2 border-top-0">
+        Utilidades de borde
+      </div>
+      <div class="rounded rounded-circle rounded-pill">Radio de borde</div>
+
+      <!-- Utilidades flexbox -->
+      <div class="d-flex d-inline-flex">Display flex</div>
+      <div class="flex-row flex-column flex-row-reverse">Dirección flex</div>
+      <div
+        class="justify-content-start justify-content-center justify-content-end"
+      >
+        Justificación
+      </div>
+      <div class="align-items-start align-items-center align-items-end">
+        Alineación
+      </div>
+      <div class="flex-fill flex-grow-1 flex-shrink-0">Propiedades flex</div>
+
+      <!-- Animaciones con gsap -->
+
+      <!-- Tarjeta compleja usando solo utilidades -->
+      <article class="card border-0 shadow-sm mb-4">
+        <div class="card-body p-4">
+          <div class="d-flex align-items-start mb-3">
+            <img
+              src="https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-09Poodle20toy.jpg?itok=umV2FG5x"
+              class="rounded-circle me-3 flex-shrink-0"
+              style="width: 48px; height: 48px"
+              alt="Autor"
+            />
+            <div class="flex-grow-1">
+              <h6 class="mb-1 fw-semibold">Título del Artículo</h6>
+              <p class="text-muted small mb-2">
+                Por Nombre del Autor • 5 min de lectura
+              </p>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-primary">Tecnología</span>
+                <span class="badge bg-secondary">Tutorial</span>
+              </div>
+            </div>
+            <button
+              class="btn btn-link p-0 text-muted ms-2"
+              aria-label="Más opciones"
+            >
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <!-- ... -->
+              </svg>
+            </button>
+          </div>
+          <p class="card-text text-muted lh-base mb-3">
+            Extracto del artículo que demuestra cómo las utilidades crean
+            diseños consistentes y mantenibles...
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-3 text-muted small">
+              <span class="d-flex align-items-center gap-1">
+                <span>👍</span>
+                <span>42</span>
+              </span>
+              <span class="d-flex align-items-center gap-1">
+                <span>💬</span>
+                <span>8</span>
+              </span>
+            </div>
+            <a href="/artículo" class="btn btn-primary btn-sm px-3 py-2"
+              >Leer Más</a
+            >
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>

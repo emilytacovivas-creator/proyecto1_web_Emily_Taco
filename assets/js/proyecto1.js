@@ -41,3 +41,14 @@ links.forEach((a) =>
     }
   })
 );
+
+// --- Arrancar siempre arriba cuando no hay #hash ---
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+window.addEventListener("load", () => {
+  if (!location.hash) {
+    window.scrollTo(0, 0);
+  }
+});
